@@ -7,22 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9004562E163330BB00481EF7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9004562D163330BB00481EF7 /* MainStoryboard.storyboard */; };
+		9004563B163330CD00481EF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90045631163330CD00481EF7 /* InfoPlist.strings */; };
+		90045640163330CD00481EF7 /* KAL-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90045638163330CD00481EF7 /* KAL-Info.plist */; };
+		90045653163336CE00481EF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90045652163336CE00481EF7 /* main.m */; };
+		9004565916333B6200481EF7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9004565616333B6200481EF7 /* Default-568h@2x.png */; };
+		9004565A16333B6200481EF7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9004565716333B6200481EF7 /* Default.png */; };
+		9004565B16333B6200481EF7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9004565816333B6200481EF7 /* Default@2x.png */; };
+		9004567716334CBB00481EF7 /* KALTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9004567616334CBB00481EF7 /* KALTodayViewController.m */; };
+		9004567A16334CC900481EF7 /* KALTomorrowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9004567916334CC900481EF7 /* KALTomorrowViewController.m */; };
+		9004567C16334F0E00481EF7 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9004567B16334F0E00481EF7 /* EventKit.framework */; };
+		9004567F1633585000481EF7 /* NSDate+TodayTomorrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9004567E1633585000481EF7 /* NSDate+TodayTomorrow.m */; };
+		900456821635803700481EF7 /* NSDateTodayTomorrowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 900456811635803700481EF7 /* NSDateTodayTomorrowTests.m */; };
+		90329FBC163DD02B0092724D /* KALMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90329FBB163DD02B0092724D /* KALMainViewController.m */; };
+		90329FBF163DD17D0092724D /* PagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90329FBE163DD17D0092724D /* PagerViewController.m */; };
+		90329FCF163DDE150092724D /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FC9163DDE150092724D /* header.png */; };
+		90329FD0163DDE150092724D /* header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FCA163DDE150092724D /* header@2x.png */; };
+		90329FD1163DDE150092724D /* today.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FCB163DDE150092724D /* today.png */; };
+		90329FD2163DDE150092724D /* today@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FCC163DDE150092724D /* today@2x.png */; };
+		90329FD3163DDE150092724D /* tomorrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FCD163DDE150092724D /* tomorrow.png */; };
+		90329FD4163DDE150092724D /* tomorrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FCE163DDE150092724D /* tomorrow@2x.png */; };
 		9068AE8E16332C2E0002C867 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9068AE8D16332C2E0002C867 /* UIKit.framework */; };
 		9068AE9016332C2E0002C867 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9068AE8F16332C2E0002C867 /* Foundation.framework */; };
 		9068AE9216332C2E0002C867 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9068AE9116332C2E0002C867 /* CoreGraphics.framework */; };
-		9068AE9816332C2E0002C867 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9068AE9616332C2E0002C867 /* InfoPlist.strings */; };
-		9068AE9A16332C2E0002C867 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9068AE9916332C2E0002C867 /* main.m */; };
 		9068AE9E16332C2E0002C867 /* KALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9068AE9D16332C2E0002C867 /* KALAppDelegate.m */; };
-		9068AEA016332C2E0002C867 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9068AE9F16332C2E0002C867 /* Default.png */; };
-		9068AEA216332C2E0002C867 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9068AEA116332C2E0002C867 /* Default@2x.png */; };
-		9068AEA416332C2E0002C867 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9068AEA316332C2E0002C867 /* Default-568h@2x.png */; };
-		9068AEA716332C2E0002C867 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9068AEA516332C2E0002C867 /* MainStoryboard.storyboard */; };
-		9068AEAA16332C2E0002C867 /* KALViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9068AEA916332C2E0002C867 /* KALViewController.m */; };
 		9068AEB216332C2E0002C867 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9068AEB116332C2E0002C867 /* SenTestingKit.framework */; };
 		9068AEB316332C2E0002C867 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9068AE8D16332C2E0002C867 /* UIKit.framework */; };
 		9068AEB416332C2E0002C867 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9068AE8F16332C2E0002C867 /* Foundation.framework */; };
 		9068AEBC16332C2F0002C867 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9068AEBA16332C2E0002C867 /* InfoPlist.strings */; };
-		9068AEBF16332C2F0002C867 /* KALTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9068AEBE16332C2F0002C867 /* KALTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,28 +48,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9004562D163330BB00481EF7 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		90045632163330CD00481EF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		90045638163330CD00481EF7 /* KAL-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "KAL-Info.plist"; path = "Supporting Files/KAL-Info.plist"; sourceTree = "<group>"; };
+		90045639163330CD00481EF7 /* KAL-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KAL-Prefix.pch"; path = "Supporting Files/KAL-Prefix.pch"; sourceTree = "<group>"; };
+		90045652163336CE00481EF7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9004565616333B6200481EF7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9004565716333B6200481EF7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9004565816333B6200481EF7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9004567516334CBB00481EF7 /* KALTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KALTodayViewController.h; sourceTree = "<group>"; };
+		9004567616334CBB00481EF7 /* KALTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KALTodayViewController.m; sourceTree = "<group>"; };
+		9004567816334CC800481EF7 /* KALTomorrowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KALTomorrowViewController.h; sourceTree = "<group>"; };
+		9004567916334CC900481EF7 /* KALTomorrowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KALTomorrowViewController.m; sourceTree = "<group>"; };
+		9004567B16334F0E00481EF7 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		9004567D1633585000481EF7 /* NSDate+TodayTomorrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TodayTomorrow.h"; sourceTree = "<group>"; };
+		9004567E1633585000481EF7 /* NSDate+TodayTomorrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TodayTomorrow.m"; sourceTree = "<group>"; };
+		900456811635803700481EF7 /* NSDateTodayTomorrowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateTodayTomorrowTests.m; sourceTree = "<group>"; };
+		90329FBA163DD02B0092724D /* KALMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KALMainViewController.h; sourceTree = "<group>"; };
+		90329FBB163DD02B0092724D /* KALMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KALMainViewController.m; sourceTree = "<group>"; };
+		90329FBD163DD17D0092724D /* PagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagerViewController.h; sourceTree = "<group>"; };
+		90329FBE163DD17D0092724D /* PagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagerViewController.m; sourceTree = "<group>"; };
+		90329FC9163DDE150092724D /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
+		90329FCA163DDE150092724D /* header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header@2x.png"; sourceTree = "<group>"; };
+		90329FCB163DDE150092724D /* today.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = today.png; sourceTree = "<group>"; };
+		90329FCC163DDE150092724D /* today@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "today@2x.png"; sourceTree = "<group>"; };
+		90329FCD163DDE150092724D /* tomorrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomorrow.png; sourceTree = "<group>"; };
+		90329FCE163DDE150092724D /* tomorrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tomorrow@2x.png"; sourceTree = "<group>"; };
 		9068AE8916332C2E0002C867 /* KAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068AE8D16332C2E0002C867 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9068AE8F16332C2E0002C867 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9068AE9116332C2E0002C867 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9068AE9516332C2E0002C867 /* KAL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KAL-Info.plist"; sourceTree = "<group>"; };
-		9068AE9716332C2E0002C867 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9068AE9916332C2E0002C867 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9068AE9B16332C2E0002C867 /* KAL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KAL-Prefix.pch"; sourceTree = "<group>"; };
 		9068AE9C16332C2E0002C867 /* KALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KALAppDelegate.h; sourceTree = "<group>"; };
 		9068AE9D16332C2E0002C867 /* KALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KALAppDelegate.m; sourceTree = "<group>"; };
-		9068AE9F16332C2E0002C867 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		9068AEA116332C2E0002C867 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		9068AEA316332C2E0002C867 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		9068AEA616332C2E0002C867 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		9068AEA816332C2E0002C867 /* KALViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KALViewController.h; sourceTree = "<group>"; };
-		9068AEA916332C2E0002C867 /* KALViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KALViewController.m; sourceTree = "<group>"; };
 		9068AEB016332C2E0002C867 /* KALTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KALTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068AEB116332C2E0002C867 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9068AEB916332C2E0002C867 /* KALTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KALTests-Info.plist"; sourceTree = "<group>"; };
 		9068AEBB16332C2E0002C867 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9068AEBD16332C2F0002C867 /* KALTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KALTests.h; sourceTree = "<group>"; };
-		9068AEBE16332C2F0002C867 /* KALTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KALTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9004567C16334F0E00481EF7 /* EventKit.framework in Frameworks */,
 				9068AE8E16332C2E0002C867 /* UIKit.framework in Frameworks */,
 				9068AE9016332C2E0002C867 /* Foundation.framework in Frameworks */,
 				9068AE9216332C2E0002C867 /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +111,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90045630163330CD00481EF7 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				90045631163330CD00481EF7 /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = "Supporting Files/en.lproj";
+			sourceTree = "<group>";
+		};
+		90045633163330CD00481EF7 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9004565616333B6200481EF7 /* Default-568h@2x.png */,
+				9004565716333B6200481EF7 /* Default.png */,
+				9004565816333B6200481EF7 /* Default@2x.png */,
+				90329FC9163DDE150092724D /* header.png */,
+				90329FCA163DDE150092724D /* header@2x.png */,
+				90329FCB163DDE150092724D /* today.png */,
+				90329FCC163DDE150092724D /* today@2x.png */,
+				90329FCD163DDE150092724D /* tomorrow.png */,
+				90329FCE163DDE150092724D /* tomorrow@2x.png */,
+			);
+			name = images;
+			path = "Supporting Files/images";
+			sourceTree = "<group>";
+		};
 		9068AE7E16332C2E0002C867 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +159,7 @@
 		9068AE8C16332C2E0002C867 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9004567B16334F0E00481EF7 /* EventKit.framework */,
 				9068AE8D16332C2E0002C867 /* UIKit.framework */,
 				9068AE8F16332C2E0002C867 /* Foundation.framework */,
 				9068AE9116332C2E0002C867 /* CoreGraphics.framework */,
@@ -119,9 +173,17 @@
 			children = (
 				9068AE9C16332C2E0002C867 /* KALAppDelegate.h */,
 				9068AE9D16332C2E0002C867 /* KALAppDelegate.m */,
-				9068AEA516332C2E0002C867 /* MainStoryboard.storyboard */,
-				9068AEA816332C2E0002C867 /* KALViewController.h */,
-				9068AEA916332C2E0002C867 /* KALViewController.m */,
+				9004562D163330BB00481EF7 /* MainStoryboard.storyboard */,
+				90329FBD163DD17D0092724D /* PagerViewController.h */,
+				90329FBE163DD17D0092724D /* PagerViewController.m */,
+				90329FBA163DD02B0092724D /* KALMainViewController.h */,
+				90329FBB163DD02B0092724D /* KALMainViewController.m */,
+				9004567516334CBB00481EF7 /* KALTodayViewController.h */,
+				9004567616334CBB00481EF7 /* KALTodayViewController.m */,
+				9004567816334CC800481EF7 /* KALTomorrowViewController.h */,
+				9004567916334CC900481EF7 /* KALTomorrowViewController.m */,
+				9004567D1633585000481EF7 /* NSDate+TodayTomorrow.h */,
+				9004567E1633585000481EF7 /* NSDate+TodayTomorrow.m */,
 				9068AE9416332C2E0002C867 /* Supporting Files */,
 			);
 			path = KAL;
@@ -130,13 +192,11 @@
 		9068AE9416332C2E0002C867 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9068AE9516332C2E0002C867 /* KAL-Info.plist */,
-				9068AE9616332C2E0002C867 /* InfoPlist.strings */,
-				9068AE9916332C2E0002C867 /* main.m */,
-				9068AE9B16332C2E0002C867 /* KAL-Prefix.pch */,
-				9068AE9F16332C2E0002C867 /* Default.png */,
-				9068AEA116332C2E0002C867 /* Default@2x.png */,
-				9068AEA316332C2E0002C867 /* Default-568h@2x.png */,
+				90045630163330CD00481EF7 /* en.lproj */,
+				90045633163330CD00481EF7 /* images */,
+				90045638163330CD00481EF7 /* KAL-Info.plist */,
+				90045639163330CD00481EF7 /* KAL-Prefix.pch */,
+				90045652163336CE00481EF7 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -144,9 +204,8 @@
 		9068AEB716332C2E0002C867 /* KALTests */ = {
 			isa = PBXGroup;
 			children = (
-				9068AEBD16332C2F0002C867 /* KALTests.h */,
-				9068AEBE16332C2F0002C867 /* KALTests.m */,
 				9068AEB816332C2E0002C867 /* Supporting Files */,
+				900456811635803700481EF7 /* NSDateTodayTomorrowTests.m */,
 			);
 			path = KALTests;
 			sourceTree = "<group>";
@@ -207,7 +266,7 @@
 			attributes = {
 				CLASSPREFIX = KAL;
 				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Matthew Smtih";
+				ORGANIZATIONNAME = "Matthew Smith";
 			};
 			buildConfigurationList = 9068AE8316332C2E0002C867 /* Build configuration list for PBXProject "KAL" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -232,11 +291,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9068AE9816332C2E0002C867 /* InfoPlist.strings in Resources */,
-				9068AEA016332C2E0002C867 /* Default.png in Resources */,
-				9068AEA216332C2E0002C867 /* Default@2x.png in Resources */,
-				9068AEA416332C2E0002C867 /* Default-568h@2x.png in Resources */,
-				9068AEA716332C2E0002C867 /* MainStoryboard.storyboard in Resources */,
+				9004562E163330BB00481EF7 /* MainStoryboard.storyboard in Resources */,
+				9004565916333B6200481EF7 /* Default-568h@2x.png in Resources */,
+				9004565A16333B6200481EF7 /* Default.png in Resources */,
+				9004565B16333B6200481EF7 /* Default@2x.png in Resources */,
+				90329FCF163DDE150092724D /* header.png in Resources */,
+				90329FD0163DDE150092724D /* header@2x.png in Resources */,
+				90329FD1163DDE150092724D /* today.png in Resources */,
+				90329FD2163DDE150092724D /* today@2x.png in Resources */,
+				90329FD3163DDE150092724D /* tomorrow.png in Resources */,
+				90329FD4163DDE150092724D /* tomorrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +309,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9068AEBC16332C2F0002C867 /* InfoPlist.strings in Resources */,
+				9004563B163330CD00481EF7 /* InfoPlist.strings in Resources */,
+				90045640163330CD00481EF7 /* KAL-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,9 +337,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9068AE9A16332C2E0002C867 /* main.m in Sources */,
 				9068AE9E16332C2E0002C867 /* KALAppDelegate.m in Sources */,
-				9068AEAA16332C2E0002C867 /* KALViewController.m in Sources */,
+				90045653163336CE00481EF7 /* main.m in Sources */,
+				9004567716334CBB00481EF7 /* KALTodayViewController.m in Sources */,
+				9004567A16334CC900481EF7 /* KALTomorrowViewController.m in Sources */,
+				9004567F1633585000481EF7 /* NSDate+TodayTomorrow.m in Sources */,
+				90329FBC163DD02B0092724D /* KALMainViewController.m in Sources */,
+				90329FBF163DD17D0092724D /* PagerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9068AEBF16332C2F0002C867 /* KALTests.m in Sources */,
+				900456821635803700481EF7 /* NSDateTodayTomorrowTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,20 +366,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9068AE9616332C2E0002C867 /* InfoPlist.strings */ = {
+		90045631163330CD00481EF7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9068AE9716332C2E0002C867 /* en */,
+				90045632163330CD00481EF7 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9068AEA516332C2E0002C867 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9068AEA616332C2E0002C867 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		9068AEBA16332C2E0002C867 /* InfoPlist.strings */ = {
@@ -377,8 +439,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KAL/KAL-Prefix.pch";
-				INFOPLIST_FILE = "KAL/KAL-Info.plist";
+				GCC_PREFIX_HEADER = "KAL/Supporting Files/KAL-Prefix.pch";
+				INFOPLIST_FILE = "KAL/Supporting Files/KAL-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -388,8 +451,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KAL/KAL-Prefix.pch";
-				INFOPLIST_FILE = "KAL/KAL-Info.plist";
+				GCC_PREFIX_HEADER = "KAL/Supporting Files/KAL-Prefix.pch";
+				INFOPLIST_FILE = "KAL/Supporting Files/KAL-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -404,7 +468,7 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KAL/KAL-Prefix.pch";
+				GCC_PREFIX_HEADER = "KAL/Supporting Files/KAL-Prefix.pch";
 				INFOPLIST_FILE = "KALTests/KALTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -421,7 +485,7 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KAL/KAL-Prefix.pch";
+				GCC_PREFIX_HEADER = "KAL/Supporting Files/KAL-Prefix.pch";
 				INFOPLIST_FILE = "KALTests/KALTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -448,6 +512,7 @@
 				9068AEC416332C2F0002C867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9068AEC516332C2F0002C867 /* Build configuration list for PBXNativeTarget "KALTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +521,7 @@
 				9068AEC716332C2F0002C867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -54,6 +54,13 @@
     [self addChildViewController:self.tomorrowViewController];
 }
 
+- (void)viewDidUnload {
+    [self setScrollView:nil];
+    [self setPageControl:nil];
+    [self setHeaderScrollView:nil];
+    [super viewDidUnload];
+}
+
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 	
@@ -200,8 +207,4 @@
     self.pageControlUsed = YES;
 }
 
-- (void)viewDidUnload {
-    [self setHeaderScrollView:nil];
-    [super viewDidUnload];
-}
 @end

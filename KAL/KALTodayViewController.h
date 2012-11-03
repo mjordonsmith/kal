@@ -11,6 +11,6 @@
 
 @interface KALTodayViewController : UITableViewController
 
-@property (nonatomic, weak) id <KALChangeHeaderDelegate> delegate;
+@property (weak, nonatomic) id <KALChangeHeaderDelegate> delegate;
 
 @end

@@ -26,6 +26,8 @@
 		90329FD2163DDE150092724D /* today@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FCC163DDE150092724D /* today@2x.png */; };
 		90329FD3163DDE150092724D /* tomorrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FCD163DDE150092724D /* tomorrow.png */; };
 		90329FD4163DDE150092724D /* tomorrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FCE163DDE150092724D /* tomorrow@2x.png */; };
+		90686D481644DF8000FCDC39 /* KALTodayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90686D471644DF8000FCDC39 /* KALTodayCell.m */; };
+		90686D4C1644EDA200FCDC39 /* KALTomorrowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90686D4B1644EDA200FCDC39 /* KALTomorrowCell.m */; };
 		9068AE8E16332C2E0002C867 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9068AE8D16332C2E0002C867 /* UIKit.framework */; };
 		9068AE9016332C2E0002C867 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9068AE8F16332C2E0002C867 /* Foundation.framework */; };
 		9068AE9216332C2E0002C867 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9068AE9116332C2E0002C867 /* CoreGraphics.framework */; };
@@ -72,6 +74,10 @@
 		90329FCD163DDE150092724D /* tomorrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomorrow.png; sourceTree = "<group>"; };
 		90329FCE163DDE150092724D /* tomorrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tomorrow@2x.png"; sourceTree = "<group>"; };
 		90686D2F16430A1900FCDC39 /* KALChangeHeaderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KALChangeHeaderDelegate.h; sourceTree = "<group>"; };
+		90686D461644DF8000FCDC39 /* KALTodayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KALTodayCell.h; sourceTree = "<group>"; };
+		90686D471644DF8000FCDC39 /* KALTodayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KALTodayCell.m; sourceTree = "<group>"; };
+		90686D4A1644EDA100FCDC39 /* KALTomorrowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KALTomorrowCell.h; sourceTree = "<group>"; };
+		90686D4B1644EDA200FCDC39 /* KALTomorrowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KALTomorrowCell.m; sourceTree = "<group>"; };
 		9068AE8916332C2E0002C867 /* KAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068AE8D16332C2E0002C867 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9068AE8F16332C2E0002C867 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -175,6 +181,10 @@
 				90686D2F16430A1900FCDC39 /* KALChangeHeaderDelegate.h */,
 				90329FBA163DD02B0092724D /* KALMainViewController.h */,
 				90329FBB163DD02B0092724D /* KALMainViewController.m */,
+				90686D461644DF8000FCDC39 /* KALTodayCell.h */,
+				90686D471644DF8000FCDC39 /* KALTodayCell.m */,
+				90686D4A1644EDA100FCDC39 /* KALTomorrowCell.h */,
+				90686D4B1644EDA200FCDC39 /* KALTomorrowCell.m */,
 				9004567516334CBB00481EF7 /* KALTodayViewController.h */,
 				9004567616334CBB00481EF7 /* KALTodayViewController.m */,
 				9004567816334CC800481EF7 /* KALTomorrowViewController.h */,
@@ -340,6 +350,8 @@
 				9004567A16334CC900481EF7 /* KALTomorrowViewController.m in Sources */,
 				9004567F1633585000481EF7 /* NSDate+TodayTomorrow.m in Sources */,
 				90329FBC163DD02B0092724D /* KALMainViewController.m in Sources */,
+				90686D481644DF8000FCDC39 /* KALTodayCell.m in Sources */,
+				90686D4C1644EDA200FCDC39 /* KALTomorrowCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

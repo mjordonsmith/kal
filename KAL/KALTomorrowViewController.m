@@ -8,7 +8,9 @@
 
 #import "KALTomorrowViewController.h"
 #import "EventKit/EKEventStore.h"
+#import "EventKit/EKEvent.h"
 #import "NSDate+TodayTomorrow.h"
+#import "KALTomorrowCell.h"
 
 @interface KALTomorrowViewController ()
 
@@ -19,6 +21,8 @@
 @end
 
 @implementation KALTomorrowViewController
+
+#pragma mark - Init, view lifecycle, & memory warning
 
 - (id)initWithCoder:(NSCoder *)decoder {
     self = [super initWithCoder:decoder];
@@ -45,6 +49,10 @@
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -86,9 +94,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"EventCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    KALTomorrowCell *cell = (KALTomorrowCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.events[indexPath.row] title];
+    EKEvent *event = (EKEvent *)self.events[indexPath.row];
+    
+    cell.titleLabel.text = event.title;
+    cell.locationLabel.text = event.location;    
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"hh:mm a"];
+    cell.timeLabel.text = [dateFormat stringFromDate:event.startDate];
     
     return cell;
 }

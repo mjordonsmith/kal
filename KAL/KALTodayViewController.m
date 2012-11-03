@@ -8,7 +8,9 @@
 
 #import "KALTodayViewController.h"
 #import "EventKit/EKEventStore.h"
+#import "EventKit/EKEvent.h"
 #import "NSDate+TodayTomorrow.h"
+#import "KALTodayCell.h"
 
 @interface KALTodayViewController ()
 
@@ -19,6 +21,8 @@
 @end
 
 @implementation KALTodayViewController
+
+#pragma mark - Init, view lifecycle, & memory warning
 
 - (id)initWithCoder:(NSCoder *)decoder {
     self = [super initWithCoder:decoder];
@@ -45,6 +49,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -86,9 +94,34 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"EventCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    KALTodayCell *cell = (KALTodayCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.events[indexPath.row] title];
+    EKEvent *event = (EKEvent *)self.events[indexPath.row];
+
+    if (indexPath.row == 0) {
+        cell.nextUpcomingLabel.text = @"Next Meeting";
+    } else {
+        cell.nextUpcomingLabel.text = @"Upcoming Meeting";
+    }
+    cell.titleLabel.text = event.title;
+    cell.locationLabel.text = event.location;
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"hh:mm a"];
+    cell.timeLabel.text = [dateFormat stringFromDate:event.startDate];
+    NSDate *now = [NSDate date];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [calendar components:NSHourCalendarUnit|NSMinuteCalendarUnit
+                                               fromDate:now
+                                                 toDate:event.startDate
+                                                options:0];
+    if (components.hour == 0) {
+        cell.timeUntilLabel.text = [NSString stringWithFormat:@"%d", components.minute];
+        cell.timeUntilUnitLabel.text = @"minutes until meeting";
+    } else {
+        float hoursUntil = components.hour + (components.minute / 60.0);
+        cell.timeUntilLabel.text = [NSString stringWithFormat:@"%3.1f", hoursUntil];
+        cell.timeUntilUnitLabel.text = @"hours until meeting";
+    }
     
     return cell;
 }

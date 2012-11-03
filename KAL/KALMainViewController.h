@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KALChangeHeaderDelegate.h"
 
+@interface KALMainViewController : UIViewController <UIScrollViewDelegate, KALChangeHeaderDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (weak, nonatomic) IBOutlet UIScrollView *headerScrollView;
 
 - (IBAction)changePage:(id)sender;
 

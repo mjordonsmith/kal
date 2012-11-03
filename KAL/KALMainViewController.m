@@ -38,6 +38,12 @@
 	[self.scrollView setScrollEnabled:YES];
 	[self.scrollView setShowsHorizontalScrollIndicator:NO];
 	[self.scrollView setShowsVerticalScrollIndicator:NO];
+	[self.scrollView setDelegate:self];
+
+    [self.headerScrollView setPagingEnabled:YES];
+	[self.headerScrollView setScrollEnabled:YES];
+	[self.headerScrollView setShowsHorizontalScrollIndicator:NO];
+	[self.headerScrollView setShowsVerticalScrollIndicator:NO];
 
     self.todayViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TodayPage"];
     self.tomorrowViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TomorrowPage"];
@@ -64,6 +70,22 @@
     [self.scrollView addSubview:self.tomorrowViewController.view];
 
 	self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 2, self.scrollView.frame.size.height);
+    
+    frame = self.headerScrollView.frame;
+    frame.origin.x = 0;
+    frame.origin.y = 0;
+    UIImageView *todayHeaderImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"today"]];
+    todayHeaderImageView.frame = frame;
+    [self.headerScrollView addSubview:todayHeaderImageView];
+
+    frame = self.headerScrollView.frame;
+    frame.origin.x = frame.size.width;
+    frame.origin.y = 0;
+    UIImageView *tomorrowHeaderImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tomorrow"]];
+    tomorrowHeaderImageView.frame = frame;
+    [self.headerScrollView addSubview:tomorrowHeaderImageView];
+
+    self.headerScrollView.contentSize = CGSizeMake(self.headerScrollView.frame.size.width * 2, self.headerScrollView.frame.size.height);
     
 	self.pageControl.currentPage = 0;
 	self.page = 0;
@@ -148,6 +170,15 @@
     self.pageControlUsed = NO;
 }
 
+#pragma mark - KALChangeHeaderDelegate
+
+- (void)pageChanged {
+    CGRect frame = self.headerScrollView.frame;
+    frame.origin.x = frame.size.width * self.page;
+    frame.origin.y = 0;
+	[self.headerScrollView scrollRectToVisible:frame animated:NO];
+}
+
 #pragma mark - Other
 
 - (IBAction)changePage:(id)sender {
@@ -170,6 +201,7 @@
 }
 
 - (void)viewDidUnload {
+    [self setHeaderScrollView:nil];
     [super viewDidUnload];
 }
 @end

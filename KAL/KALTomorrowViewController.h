@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KALChangeHeaderDelegate.h"
 
 @interface KALTomorrowViewController : UITableViewController
+
+@property (nonatomic, weak) id <KALChangeHeaderDelegate> delegate;
 
 @end

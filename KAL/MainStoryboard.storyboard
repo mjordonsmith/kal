@@ -28,12 +28,6 @@
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4L3-Xq-xMf">
                                         <rect key="frame" x="137" y="13" width="173" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="today.png" id="UhO-C3-Ya8">
-                                                <rect key="frame" x="0.0" y="0.0" width="173" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            </imageView>
-                                        </subviews>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -45,6 +39,7 @@
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" id="uHL-jr-pTY">
                                         <rect key="frame" x="141" y="-8" width="38" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="pageIndicatorTintColor" red="0.43349410076530615" green="0.21768981776999005" blue="0.00089657614236225811" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="changePage:" destination="ixC-hp-g56" eventType="valueChanged" id="ZVw-Ly-OW5"/>
                                         </connections>
@@ -56,6 +51,7 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="headerScrollView" destination="4L3-Xq-xMf" id="qEB-cU-UuV"/>
                         <outlet property="pageControl" destination="uHL-jr-pTY" id="3RW-JA-Mwu"/>
                         <outlet property="scrollView" destination="OIk-Vy-8yY" id="0A6-cm-DMO"/>
                     </connections>
@@ -125,25 +121,22 @@
     </scenes>
     <resources>
         <image name="header.png" width="320" height="59"/>
-        <image name="today.png" width="173" height="34"/>
     </resources>
     <classes>
-        <class className="KALMainViewController" superclassName="PagerViewController">
+        <class className="KALMainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KALMainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changePage:"/>
+                <relationship kind="outlet" name="headerScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
         </class>
         <class className="KALTodayViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KALTodayViewController.h"/>
         </class>
         <class className="KALTomorrowViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KALTomorrowViewController.h"/>
-        </class>
-        <class className="PagerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagerViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changePage:"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

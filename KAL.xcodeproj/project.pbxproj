@@ -71,6 +71,7 @@
 		90329FCC163DDE150092724D /* today@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "today@2x.png"; sourceTree = "<group>"; };
 		90329FCD163DDE150092724D /* tomorrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomorrow.png; sourceTree = "<group>"; };
 		90329FCE163DDE150092724D /* tomorrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tomorrow@2x.png"; sourceTree = "<group>"; };
+		90686D2F16430A1900FCDC39 /* KALChangeHeaderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KALChangeHeaderDelegate.h; sourceTree = "<group>"; };
 		9068AE8916332C2E0002C867 /* KAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068AE8D16332C2E0002C867 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9068AE8F16332C2E0002C867 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -171,6 +172,7 @@
 				9068AE9C16332C2E0002C867 /* KALAppDelegate.h */,
 				9068AE9D16332C2E0002C867 /* KALAppDelegate.m */,
 				9004562D163330BB00481EF7 /* MainStoryboard.storyboard */,
+				90686D2F16430A1900FCDC39 /* KALChangeHeaderDelegate.h */,
 				90329FBA163DD02B0092724D /* KALMainViewController.h */,
 				90329FBB163DD02B0092724D /* KALMainViewController.m */,
 				9004567516334CBB00481EF7 /* KALTodayViewController.h */,

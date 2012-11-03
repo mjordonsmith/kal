@@ -20,7 +20,6 @@
 		9004567F1633585000481EF7 /* NSDate+TodayTomorrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9004567E1633585000481EF7 /* NSDate+TodayTomorrow.m */; };
 		900456821635803700481EF7 /* NSDateTodayTomorrowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 900456811635803700481EF7 /* NSDateTodayTomorrowTests.m */; };
 		90329FBC163DD02B0092724D /* KALMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90329FBB163DD02B0092724D /* KALMainViewController.m */; };
-		90329FBF163DD17D0092724D /* PagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90329FBE163DD17D0092724D /* PagerViewController.m */; };
 		90329FCF163DDE150092724D /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FC9163DDE150092724D /* header.png */; };
 		90329FD0163DDE150092724D /* header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FCA163DDE150092724D /* header@2x.png */; };
 		90329FD1163DDE150092724D /* today.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FCB163DDE150092724D /* today.png */; };
@@ -66,8 +65,6 @@
 		900456811635803700481EF7 /* NSDateTodayTomorrowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateTodayTomorrowTests.m; sourceTree = "<group>"; };
 		90329FBA163DD02B0092724D /* KALMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KALMainViewController.h; sourceTree = "<group>"; };
 		90329FBB163DD02B0092724D /* KALMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KALMainViewController.m; sourceTree = "<group>"; };
-		90329FBD163DD17D0092724D /* PagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagerViewController.h; sourceTree = "<group>"; };
-		90329FBE163DD17D0092724D /* PagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagerViewController.m; sourceTree = "<group>"; };
 		90329FC9163DDE150092724D /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
 		90329FCA163DDE150092724D /* header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header@2x.png"; sourceTree = "<group>"; };
 		90329FCB163DDE150092724D /* today.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = today.png; sourceTree = "<group>"; };
@@ -174,8 +171,6 @@
 				9068AE9C16332C2E0002C867 /* KALAppDelegate.h */,
 				9068AE9D16332C2E0002C867 /* KALAppDelegate.m */,
 				9004562D163330BB00481EF7 /* MainStoryboard.storyboard */,
-				90329FBD163DD17D0092724D /* PagerViewController.h */,
-				90329FBE163DD17D0092724D /* PagerViewController.m */,
 				90329FBA163DD02B0092724D /* KALMainViewController.h */,
 				90329FBB163DD02B0092724D /* KALMainViewController.m */,
 				9004567516334CBB00481EF7 /* KALTodayViewController.h */,
@@ -343,7 +338,6 @@
 				9004567A16334CC900481EF7 /* KALTomorrowViewController.m in Sources */,
 				9004567F1633585000481EF7 /* NSDate+TodayTomorrow.m in Sources */,
 				90329FBC163DD02B0092724D /* KALMainViewController.m in Sources */,
-				90329FBF163DD17D0092724D /* PagerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

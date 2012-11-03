@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PagerViewController.h"
 
-@interface KALMainViewController : PagerViewController
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+
+- (IBAction)changePage:(id)sender;
 
 @end

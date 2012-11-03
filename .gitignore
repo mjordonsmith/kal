@@ -1,0 +1,5 @@
+.DS_Store
+KAL.xcodeproj/*.pbxuser
+KAL.xcodeproj/*.mode*
+KAL.xcodeproj/*.xcworkspace/
+KAL.xcodeproj/xcuserdata/*

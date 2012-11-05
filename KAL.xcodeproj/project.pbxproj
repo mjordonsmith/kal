@@ -19,6 +19,8 @@
 		9004567C16334F0E00481EF7 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9004567B16334F0E00481EF7 /* EventKit.framework */; };
 		9004567F1633585000481EF7 /* NSDate+TodayTomorrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9004567E1633585000481EF7 /* NSDate+TodayTomorrow.m */; };
 		900456821635803700481EF7 /* NSDateTodayTomorrowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 900456811635803700481EF7 /* NSDateTodayTomorrowTests.m */; };
+		90073E5F164802740013A5D5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 90073E5D164802740013A5D5 /* icon.png */; };
+		90073E60164802740013A5D5 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90073E5E164802740013A5D5 /* icon@2x.png */; };
 		90329FBC163DD02B0092724D /* KALMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90329FBB163DD02B0092724D /* KALMainViewController.m */; };
 		90329FCF163DDE150092724D /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FC9163DDE150092724D /* header.png */; };
 		90329FD0163DDE150092724D /* header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90329FCA163DDE150092724D /* header@2x.png */; };
@@ -65,6 +67,8 @@
 		9004567D1633585000481EF7 /* NSDate+TodayTomorrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TodayTomorrow.h"; sourceTree = "<group>"; };
 		9004567E1633585000481EF7 /* NSDate+TodayTomorrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TodayTomorrow.m"; sourceTree = "<group>"; };
 		900456811635803700481EF7 /* NSDateTodayTomorrowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateTodayTomorrowTests.m; sourceTree = "<group>"; };
+		90073E5D164802740013A5D5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		90073E5E164802740013A5D5 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		90329FBA163DD02B0092724D /* KALMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KALMainViewController.h; sourceTree = "<group>"; };
 		90329FBB163DD02B0092724D /* KALMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KALMainViewController.m; sourceTree = "<group>"; };
 		90329FC9163DDE150092724D /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 		90045633163330CD00481EF7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				90073E5D164802740013A5D5 /* icon.png */,
+				90073E5E164802740013A5D5 /* icon@2x.png */,
 				9004565616333B6200481EF7 /* Default-568h@2x.png */,
 				9004565716333B6200481EF7 /* Default.png */,
 				9004565816333B6200481EF7 /* Default@2x.png */,
@@ -308,6 +314,8 @@
 				90329FD2163DDE150092724D /* today@2x.png in Resources */,
 				90329FD3163DDE150092724D /* tomorrow.png in Resources */,
 				90329FD4163DDE150092724D /* tomorrow@2x.png in Resources */,
+				90073E5F164802740013A5D5 /* icon.png in Resources */,
+				90073E60164802740013A5D5 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

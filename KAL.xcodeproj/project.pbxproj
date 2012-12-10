@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9004562E163330BB00481EF7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9004562D163330BB00481EF7 /* MainStoryboard.storyboard */; };
 		9004563B163330CD00481EF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90045631163330CD00481EF7 /* InfoPlist.strings */; };
-		90045640163330CD00481EF7 /* KAL-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90045638163330CD00481EF7 /* KAL-Info.plist */; };
 		90045653163336CE00481EF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90045652163336CE00481EF7 /* main.m */; };
 		9004565916333B6200481EF7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9004565616333B6200481EF7 /* Default-568h@2x.png */; };
 		9004565A16333B6200481EF7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9004565716333B6200481EF7 /* Default.png */; };
@@ -38,6 +37,8 @@
 		9068AEB316332C2E0002C867 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9068AE8D16332C2E0002C867 /* UIKit.framework */; };
 		9068AEB416332C2E0002C867 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9068AE8F16332C2E0002C867 /* Foundation.framework */; };
 		9068AEBC16332C2F0002C867 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9068AEBA16332C2E0002C867 /* InfoPlist.strings */; };
+		906C03CC16755C1100F50ED7 /* kal-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 906C03CB16755C1100F50ED7 /* kal-Info.plist */; };
+		906C03CE16755C2E00F50ED7 /* kalTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 906C03CD16755C2E00F50ED7 /* kalTests-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,7 @@
 /* Begin PBXFileReference section */
 		9004562D163330BB00481EF7 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		90045632163330CD00481EF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
-		90045638163330CD00481EF7 /* KAL-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "KAL-Info.plist"; path = "Supporting Files/KAL-Info.plist"; sourceTree = "<group>"; };
-		90045639163330CD00481EF7 /* KAL-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KAL-Prefix.pch"; path = "Supporting Files/KAL-Prefix.pch"; sourceTree = "<group>"; };
+		90045639163330CD00481EF7 /* kal-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "kal-Prefix.pch"; path = "Supporting Files/kal-Prefix.pch"; sourceTree = "<group>"; };
 		90045652163336CE00481EF7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9004565616333B6200481EF7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9004565716333B6200481EF7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -82,16 +82,17 @@
 		90686D471644DF8000FCDC39 /* KALTodayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KALTodayCell.m; sourceTree = "<group>"; };
 		90686D4A1644EDA100FCDC39 /* KALTomorrowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KALTomorrowCell.h; sourceTree = "<group>"; };
 		90686D4B1644EDA200FCDC39 /* KALTomorrowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KALTomorrowCell.m; sourceTree = "<group>"; };
-		9068AE8916332C2E0002C867 /* KAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9068AE8916332C2E0002C867 /* kal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068AE8D16332C2E0002C867 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9068AE8F16332C2E0002C867 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9068AE9116332C2E0002C867 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9068AE9C16332C2E0002C867 /* KALAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KALAppDelegate.h; sourceTree = "<group>"; };
 		9068AE9D16332C2E0002C867 /* KALAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KALAppDelegate.m; sourceTree = "<group>"; };
-		9068AEB016332C2E0002C867 /* KALTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KALTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9068AEB016332C2E0002C867 /* kalTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kalTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068AEB116332C2E0002C867 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		9068AEB916332C2E0002C867 /* KALTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KALTests-Info.plist"; sourceTree = "<group>"; };
 		9068AEBB16332C2E0002C867 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		906C03CB16755C1100F50ED7 /* kal-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "kal-Info.plist"; path = "Supporting Files/kal-Info.plist"; sourceTree = "<group>"; };
+		906C03CD16755C2E00F50ED7 /* kalTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "kalTests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +161,8 @@
 		9068AE8A16332C2E0002C867 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9068AE8916332C2E0002C867 /* KAL.app */,
-				9068AEB016332C2E0002C867 /* KALTests.octest */,
+				9068AE8916332C2E0002C867 /* kal.app */,
+				9068AEB016332C2E0002C867 /* kalTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,8 +208,8 @@
 			children = (
 				90045630163330CD00481EF7 /* en.lproj */,
 				90045633163330CD00481EF7 /* images */,
-				90045638163330CD00481EF7 /* KAL-Info.plist */,
-				90045639163330CD00481EF7 /* KAL-Prefix.pch */,
+				906C03CB16755C1100F50ED7 /* kal-Info.plist */,
+				90045639163330CD00481EF7 /* kal-Prefix.pch */,
 				90045652163336CE00481EF7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -226,7 +227,7 @@
 		9068AEB816332C2E0002C867 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9068AEB916332C2E0002C867 /* KALTests-Info.plist */,
+				906C03CD16755C2E00F50ED7 /* kalTests-Info.plist */,
 				9068AEBA16332C2E0002C867 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -235,9 +236,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9068AE8816332C2E0002C867 /* KAL */ = {
+		9068AE8816332C2E0002C867 /* kal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9068AEC216332C2F0002C867 /* Build configuration list for PBXNativeTarget "KAL" */;
+			buildConfigurationList = 9068AEC216332C2F0002C867 /* Build configuration list for PBXNativeTarget "kal" */;
 			buildPhases = (
 				9068AE8516332C2E0002C867 /* Sources */,
 				9068AE8616332C2E0002C867 /* Frameworks */,
@@ -247,14 +248,14 @@
 			);
 			dependencies = (
 			);
-			name = KAL;
+			name = kal;
 			productName = KAL;
-			productReference = 9068AE8916332C2E0002C867 /* KAL.app */;
+			productReference = 9068AE8916332C2E0002C867 /* kal.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9068AEAF16332C2E0002C867 /* KALTests */ = {
+		9068AEAF16332C2E0002C867 /* kalTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9068AEC516332C2F0002C867 /* Build configuration list for PBXNativeTarget "KALTests" */;
+			buildConfigurationList = 9068AEC516332C2F0002C867 /* Build configuration list for PBXNativeTarget "kalTests" */;
 			buildPhases = (
 				9068AEAB16332C2E0002C867 /* Sources */,
 				9068AEAC16332C2E0002C867 /* Frameworks */,
@@ -266,9 +267,9 @@
 			dependencies = (
 				9068AEB616332C2E0002C867 /* PBXTargetDependency */,
 			);
-			name = KALTests;
+			name = kalTests;
 			productName = KALTests;
-			productReference = 9068AEB016332C2E0002C867 /* KALTests.octest */;
+			productReference = 9068AEB016332C2E0002C867 /* kalTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -281,7 +282,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Matthew Smith";
 			};
-			buildConfigurationList = 9068AE8316332C2E0002C867 /* Build configuration list for PBXProject "KAL" */;
+			buildConfigurationList = 9068AE8316332C2E0002C867 /* Build configuration list for PBXProject "kal" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -293,8 +294,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9068AE8816332C2E0002C867 /* KAL */,
-				9068AEAF16332C2E0002C867 /* KALTests */,
+				9068AE8816332C2E0002C867 /* kal */,
+				9068AEAF16332C2E0002C867 /* kalTests */,
 			);
 		};
 /* End PBXProject section */
@@ -316,6 +317,8 @@
 				90329FD4163DDE150092724D /* tomorrow@2x.png in Resources */,
 				90073E5F164802740013A5D5 /* icon.png in Resources */,
 				90073E60164802740013A5D5 /* icon@2x.png in Resources */,
+				906C03CC16755C1100F50ED7 /* kal-Info.plist in Resources */,
+				906C03CE16755C2E00F50ED7 /* kalTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +328,6 @@
 			files = (
 				9068AEBC16332C2F0002C867 /* InfoPlist.strings in Resources */,
 				9004563B163330CD00481EF7 /* InfoPlist.strings in Resources */,
-				90045640163330CD00481EF7 /* KAL-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +378,7 @@
 /* Begin PBXTargetDependency section */
 		9068AEB616332C2E0002C867 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9068AE8816332C2E0002C867 /* KAL */;
+			target = 9068AE8816332C2E0002C867 /* kal */;
 			targetProxy = 9068AEB516332C2E0002C867 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -454,11 +456,13 @@
 		9068AEC316332C2F0002C867 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Smith (YBCZL26SGQ)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KAL/Supporting Files/KAL-Prefix.pch";
-				INFOPLIST_FILE = "KAL/Supporting Files/KAL-Info.plist";
+				GCC_PREFIX_HEADER = "KAL/Supporting Files/kal-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/KAL/Supporting Files/kal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = kal;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D8B13128-2E78-41BB-AD27-1C4A12B68551";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -466,11 +470,13 @@
 		9068AEC416332C2F0002C867 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Matthew Smith";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KAL/Supporting Files/KAL-Prefix.pch";
-				INFOPLIST_FILE = "KAL/Supporting Files/KAL-Info.plist";
+				GCC_PREFIX_HEADER = "KAL/Supporting Files/kal-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/KAL/Supporting Files/kal-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = kal;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EF9B0712-432A-4B54-BC41-DA6F3D4288B8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -485,8 +491,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KAL/Supporting Files/KAL-Prefix.pch";
-				INFOPLIST_FILE = "KALTests/KALTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "KALTests/kaltmpTests-Info.plist";
+				PRODUCT_NAME = kalTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -502,8 +508,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KAL/Supporting Files/KAL-Prefix.pch";
-				INFOPLIST_FILE = "KALTests/KALTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "KALTests/kaltmpTests-Info.plist";
+				PRODUCT_NAME = kalTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -512,7 +518,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9068AE8316332C2E0002C867 /* Build configuration list for PBXProject "KAL" */ = {
+		9068AE8316332C2E0002C867 /* Build configuration list for PBXProject "kal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9068AEC016332C2F0002C867 /* Debug */,
@@ -521,7 +527,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9068AEC216332C2F0002C867 /* Build configuration list for PBXNativeTarget "KAL" */ = {
+		9068AEC216332C2F0002C867 /* Build configuration list for PBXNativeTarget "kal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9068AEC316332C2F0002C867 /* Debug */,
@@ -530,7 +536,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9068AEC516332C2F0002C867 /* Build configuration list for PBXNativeTarget "KALTests" */ = {
+		9068AEC516332C2F0002C867 /* Build configuration list for PBXNativeTarget "kalTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9068AEC616332C2F0002C867 /* Debug */,
